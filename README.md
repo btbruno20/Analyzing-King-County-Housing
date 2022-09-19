@@ -94,7 +94,7 @@ For any additional questions, please contact Juana Tavera | tvrjuana@gmail.com, 
 ## Repository Structure
 ```
 ├── README.md                        <- The top-level README for reviewers of this project
-├── king_main.ipynb                  <- Narrative documentation of analysis in Jupyter notebook
+├── king_main.ipynb                  <- Narrative documentation of analysis and modeling in Jupyter notebook
 ├── presentation.pdf                 <- PDF version of project presentation
 ├── data                             <- Both sourced externally and generated from code
 └── images                           <- Both sourced externally and generated from code
