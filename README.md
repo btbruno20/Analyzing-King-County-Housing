@@ -81,3 +81,21 @@ Generally speaking sellers can expect for every 840 square feet increase you can
 For every increase in construction grade you should expect about a 23k increase in price
 
 We got these numbers by comparing STD in our df and then comparing that to the Coef of our final model 
+
+## Future Investigation 
+Analysis and modeling on how the the condition of the house and the year it was renovated impacts the price of a home. Also the vicinity a home has to tourist attractions, community spaces, parks, etc. and how this will effect the price. 
+
+
+## For more information
+Please review our full analysis in [our Jupyter Notebook](./king_main.ipynb) or our [presentation](./presentation.pdf).
+
+For any additional questions, please contact Juana Tavera | tvrjuana@gmail.com, Clay Hunn | hunnclay@gmail.com  Brendan Bruno | btbruno20@gmail.com
+
+## Repository Structure
+```
+├── README.md                        <- The top-level README for reviewers of this project
+├── king_main.ipynb                  <- Narrative documentation of analysis in Jupyter notebook
+├── presentation.pdf                 <- PDF version of project presentation
+├── data                             <- Both sourced externally and generated from code
+└── images                           <- Both sourced externally and generated from code
+```
