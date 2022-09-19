@@ -1,5 +1,4 @@
 # King County Housing 
--------------------------------------------------------------------------------
 This repository was created to enable exploratory data analysis and create linear regression models from the King County, WA property sold in 2014 through 2015. NW Homes, local real estate agency, wants unique insights for accurately pricing their clients' homes to avoid the homes sitting on the market for too long.
 
 Phase 2 Project Igloo Analytics – King County Realty
@@ -7,17 +6,14 @@ Phase 2 Project Igloo Analytics – King County Realty
 Juana Tavera, Clay Hunn, and Brendan Bruno
 
 # Overview & Main Findings
--------------------------------------------------------------------------------
 The team's exploratory analysis and linear regression models discovered a few recommendations for NW Homes. When selling homes in the King County area, NW Homes wants to focus on square feet living space, the construction grade of the home, the location of the home, and the price per square foot to best price the home.
 
 
 ## Business Understanding & Problem
--------------------------------------------------------------------------------
 The business problem at hand is that NW Homes (our stakeholder - local real estate agency) is looking for unique insights in the King County, WA property market so they can best price their clients' homes in order to avoid the property sitting on the market for too long. They tasked the team with exploring and modeling what features of a home are most significant to the price of a home. Therefore Igloo Analytics' goal was to analyze the key factors in the price of homes in the King County area and how strong the relationship was between them. 
 
 
 ## Data Analysis - Intital Setup
--------------------------------------------------------------------------------
 The dataset kc_house_data.csv was used for data analysis and modeling.
 
 kc_house_data.csv has 21 columns and ~22,000 entries. As the team explored these entries, it was realized that not all columns were needed for our business problem, so ended up dropping seven of them:
@@ -35,14 +31,13 @@ We used the remaining columns relevant to our stakeholder to do further data ana
 That being said, there are a few limitations that this dataset has. The first is the depth of information. For example, there is no columns containing the vicinity to community spaces, tourist attractions, parks, etc. which can have a significant impact on the price of the home. As well there is no address column where we would be able to look at the neighborhood of the home to determine the impact it would have on price. 
 
 ## The Notebooks
--------------------------------------------------------------------------------
 Each team member created a separate branch to help facilitate data analysis and modeling without creating any issues to the original data set. The branches were labeled with the team members name. Inside those branches similar naming schemes were used to identifiy what part of the project the file was for. The main files are the "eda" for exploratory data analysis, "regression" for training and testing models, and "main" for the final notebook which contains the final findings and vizualizations. 
 
 
 # Results
--------------------------------------------------------------------------------
+
 ## king_main 
--------------------------------------------------------------------------------
+
 The first major section of the king_main.ipynb includes the dropping of unnecessary columns and the creation of columns needed for our stakeholder. 
 
 The columns that were created were price_sqft which is price per square foot column and  dropping the outliers in the price column. Also created multiple maps to apply to different columns such as the zip map, grade map, and condition map which would help with modeling later on. The zipcode map binned all the zipcodes into rural, suburbs, and Seattle, and for the condition and grade maps where mapped to integers so they could be used for linear regression. 
@@ -68,7 +63,6 @@ To see which features we should include in our modeling, as well as based on our
 ## Simple Linear & First Model 
 Our first model was of square foot living because although its correlation was below grade, we believed it to be more relevant for our stakeholders
 ![model1](./images/first_model.png)
-![model2](./images/first_model_score.png)
 
 As you can see our adjusted R^2 value is equal to 0.442 which means that square foot living accounts for 44% variation of our target variable price. Which is a lot better than zero but we can improve. Also our test score for this simple model was 0.45 and the root mean squared error was ~$265,000 which is not very good at predicting the price of a home. 
 
